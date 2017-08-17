@@ -3,7 +3,7 @@
 DISCORD_USERNAME=${DISCORD_USERNAME:-"Discord CLI Notifier "}
 DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL:-""}
 
-if [ -Z"$DISCORD_WEBHOOK_URL" ]; then
+if [ -z "$DISCORD_WEBHOOK_URL" ]; then
   echo "You must define DISCORD_WEBHOOK_URL in order to post a message";
 fi
 
